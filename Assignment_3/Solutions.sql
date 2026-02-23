@@ -1,7 +1,7 @@
 --Entering Data into Department
 
 INSERT INTO Department VALUES ('A01','Computer Science and Engineering','Block A');
-INSERT INTO Department VALUES ('A02','Computer Science and Engineering (AI & ML)','Block B');
+INSERT INTO Department VALUES ('A02','Computer Science and Engineering (AI and ML)','Block B');
 INSERT INTO Department VALUES ('A03','3D Animation and Graphics','Block C');
 INSERT INTO Department VALUES ('A04','Electronics and Electrical Engineering','Block D');
 INSERT INTO Department VALUES ('A05','Mechanical Engineering','Block E');
@@ -63,4 +63,5 @@ INSERT INTO Enrollment VALUES ('S06','C08',4,'B');
 INSERT INTO Enrollment VALUES ('S07','C09',4,'A');
 INSERT INTO Enrollment VALUES ('S08','C04',3,'A');
 INSERT INTO Enrollment VALUES ('S09','C10',1,'A');
+
 
