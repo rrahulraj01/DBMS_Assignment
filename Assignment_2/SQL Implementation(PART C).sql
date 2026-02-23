@@ -5,7 +5,7 @@ CREATE TABLE Department (
 );
 
 CREATE TABLE Faculty (
-    FacultyID INT PRIMARY KEY,
+    FacultyID VARCHAR(10) PRIMARY KEY,
     Name VARCHAR(100) NOT NULL,
     Designation VARCHAR(50),
     Email VARCHAR(100) UNIQUE,
@@ -14,7 +14,7 @@ CREATE TABLE Faculty (
 );
 
 CREATE TABLE Student (
-    StudentID INT PRIMARY KEY,
+    StudentID VARCHAR(10) PRIMARY KEY,
     Name VARCHAR(100) NOT NULL,
     DateOfBirth DATE,
     Gender VARCHAR(10),
@@ -24,7 +24,7 @@ CREATE TABLE Student (
 );
 
 CREATE TABLE Course (
-    CourseID INT PRIMARY KEY,
+    CourseID VARCHAR(10) PRIMARY KEY,
     CourseName VARCHAR(100) NOT NULL,
     Credits INT,
     DepartmentID INT,
@@ -34,12 +34,13 @@ CREATE TABLE Course (
 );
 
 CREATE TABLE Enrollment (
-    StudentID INT,
-    CourseID INT,
+    StudentID VARCHAR(10),
+    CourseID VARCHAR(10),
     Semester VARCHAR(20),
     Grade VARCHAR(2),
     PRIMARY KEY (StudentID, CourseID),
     FOREIGN KEY (StudentID) REFERENCES Student(StudentID),
     FOREIGN KEY (CourseID) REFERENCES Course(CourseID)
 );
+
 
