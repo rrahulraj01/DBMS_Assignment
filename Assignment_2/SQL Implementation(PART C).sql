@@ -1,5 +1,5 @@
 CREATE TABLE Department (
-    DepartmentID INT PRIMARY KEY,
+    DepartmentID VARCHAR(10) PRIMARY KEY,
     DepartmentName VARCHAR(100) NOT NULL,
     OfficeLocation VARCHAR(100)
 );
@@ -42,3 +42,4 @@ CREATE TABLE Enrollment (
     FOREIGN KEY (StudentID) REFERENCES Student(StudentID),
     FOREIGN KEY (CourseID) REFERENCES Course(CourseID)
 );
+
